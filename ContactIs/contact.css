@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-family: roboto;
+    padding-top: 20px;
+}
+main{
+    padding: 10px 20%;
+}
+
+.in{
+    padding-top: 20px;
+}
+ul{
+    font-size: 1.7rem;
+    font-family: roboto;
+    text-align: center;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(240, 233, 233);
+}

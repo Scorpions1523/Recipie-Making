@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffe4b5; /* Light color for a dessert theme */
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Rajma rice Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <h1>Rajma rice</h1>
+    <img src="" alt="Rajma rice">
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>1 cup red kidney beans (used chitrre rajma)</li>
+      <li>2 onions (finely chopped) </li>
+      <li>6 cloves of garlic (chopped) </li>
+      <li>1 tbsp ginger (grated) </li>
+      <li>2 tablespoons chopped pistachios</li>
+      <li>1 tbsp coriander leaves (finely chopped) 
+        1 tsp red chili powder </li>
+      <li>1 tsp garam masala </li>
+      <li> tbsp oil </li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: Wash the rajma and soak them overnight or for 6 – 8 hours.
+        Take a pan, add 3 cups of water along with soaked kidney beans and a pinch of salt. Throw away the water in which the rajma were soaked. Do not use this water as this causes indigestion. Cook them for 20 to 30 minute till the rajma are soft and tender.
+        Take a small bowl add all the spices, chili powder, turmeric powder, cumin powder, coriander powder, salt and pepper. Mix all the spices well.
+        Take a kadai, heat oil in it. Add the chopped onions; cook for 7-8 minute until onions turns golden brown in color.
+        Add the garlic and green chili, cook for a minute.
+        .(if the rajma is cooked for more time it becomes more tastier as all the spices gets into it).
+        Now with the help of ladle mash a table spoon of Rajma. This will thicken the gravy. Adjust the water as per the gravy requirement. With Open lid, let it simmer for 5 minutes at low flame.
+        Take it out in a serving bowl and garnish it with coriander leaves.
+        Serve hot with plain steamed rice....</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

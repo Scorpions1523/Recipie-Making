@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/idli.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Idli Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <center><h1>Idli</h1></center>
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>2 cups idli rice</li>
+      <li>1 cup urad dal (black gram)</li>
+      <li>1/2 teaspoon fenugreek seeds</li>
+      <li>Salt to taste</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: Rinse idli rice, urad dal, and fenugreek seeds separately. Soak them in water for 4-6 hours. Grind the urad dal and fenugreek seeds into a smooth batter. Grind the idli rice into a slightly coarse batter...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

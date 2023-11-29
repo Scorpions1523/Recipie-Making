@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/kadhi.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Kadhi Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <center><h1>Kadhi</h1></center>
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>1 cup yogurt</li>
+      <li>1/4 cup gram flour (besan)</li>
+      <li>2 cups water</li>
+      <li>1 tablespoon ghee</li>
+      <li>1/2 teaspoon cumin seeds</li>
+      <li>1/2 teaspoon mustard seeds</li>
+      <li>1/4 teaspoon fenugreek seeds</li>
+      <li>1/2 teaspoon turmeric powder</li>
+      <li>1/2 teaspoon red chili powder</li>
+      <li>1/4 teaspoon asafoetida (hing)</li>
+      <li>Curry leaves</li>
+      <li>Salt to taste</li>
+      <li>Fresh coriander leaves for garnish</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: Whisk together yogurt, gram flour, and water to make a smooth mixture. In a pan, heat ghee, add cumin seeds, mustard seeds, fenugreek seeds, and let them splutter...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

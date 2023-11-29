@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffe4b5; /* Light color for a food theme */
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Veg Biryani Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <h1>Veg Biryani</h1>
+    <img src="" alt="Veg Biryani">
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>1 cup basmati rice</li>
+      <li>2 cups mixed vegetables (carrots, beans, peas, etc.)</li>
+      <li>1 large onion, thinly sliced</li>
+      <li>1 large tomato, chopped</li>
+      <li>1/4 cup plain yogurt</li>
+      <li>1/4 cup chopped mint leaves</li>
+      <li>1/4 cup chopped coriander leaves</li>
+      <li>1/4 cup fried onions (optional, for garnish)</li>
+      <li>1/4 cup cashews and raisins (optional, for garnish)</li>
+      <li>2 tablespoons ghee or oil</li>
+      <li>Whole spices (bay leaf, cinnamon stick, cloves, cardamom)</li>
+      <li>1 teaspoon ginger-garlic paste</li>
+      <li>1/2 teaspoon turmeric powder</li>
+      <li>1/2 teaspoon red chili powder</li>
+      <li>1 teaspoon biryani masala</li>
+      <li>Salt to taste</li>
+      <li>2 cups water</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: 1. First, rinse 1.5 cups of basmati rice (300 grams) in clean water until the water runs clear of starch. You can use a bowl or colander to rinse the rice. Make sure you soak the rice grains in water for 30 minutes after rinsing them.
+      2. While the basmati rice is soaking, use that time to prep the other ingredients. First, you will want to rinse, peel and chop all of the veggies. This will make the process of cooking go by much quicker.
+      3. Once the rice has been able to soak for 30 minutes, drain all the water and set aside.3. While the basmati rice is soaking, use that time to prep the other ingredients. First, you will want to rinse, peel and chop all of the veggies. This will make the process of cooking go by much quicker.
+     4. Now it is time to add the rice for your veg biryani to the spice mixture in the pot. Gently stir with a spoon or fork after you add the soaked basmati rice. Check the taste of water and ensure it is slightly salty. ...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

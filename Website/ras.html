@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffe4b5; /* Light color for a dessert theme */
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Ras Malai Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <h1>Ras Malai</h1>
+    <img src="" alt="Ras Malai">
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li> we need 12 to 15 rasgulla</li>
+      <li>1 liter whole milk</li>
+      <li>1/4 cup lemon juice</li>
+      <li>1 cup sugar</li>
+      <li> peel the almonds and slice</li>
+      <li>1/2 teaspoon cardamom powder</li>
+      <li>2 tablespoons chopped pistachios</li>
+      <li>1 litre of full fat whole milk in a thick bottomed pan or kadai.</li>
+      <li>2 tablespoons chopped almonds</li>
+      <li>1 cup heavy cream</li>
+      <li>1/4 cup condensed milk</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: Boil the milk in a pan. Once it boils, add lemon juice to curdle the milk. Strain the curdled milk using a muslin clothRasmalai is made by soaking or cooking rasgulla in thickened milk for a few minutes. The rasgulla balls absorb the flavor of the sweetened flavored milk and becomes soft.
+
+      These soft balls are served together with the sweetened thickened milk. For rasgulla the chenna balls (cottage cheese balls) are cooked in sugar syrup. Once they cooked through and become spongy, they are served with the sugar syrup and not thickened milk.,...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/pea rice].jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Pea Rice Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <center><h1>Pea Rice</h1></center>
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>2 cups basmati rice</li>
+      <li>1 cup peas</li>
+      <li>1 medium onion, finely chopped</li>
+      <li>2 cloves garlic, minced</li>
+      <li>1 teaspoon cumin seeds</li>
+      <li>1/2 teaspoon turmeric powder</li>
+      <li>1/2 teaspoon cayenne pepper (optional)</li>
+      <li>Salt to taste</li>
+      <li>2 tablespoons vegetable oil</li>
+      <li>Fresh cilantro for garnish</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: Rinse the basmati rice under cold water until the water runs clear. In a large pan, heat vegetable oil over medium heat...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

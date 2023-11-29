@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/gazar ka halwa.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Gajar Ka Halwa Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <center><h1>Gajar Ka Halwa</h1></center>
+    
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>4 cups grated carrots</li>
+      <li>2 cups whole milk</li>
+      <li>1 cup sugar</li>
+      <li>1/2 cup ghee</li>
+      <li>1/4 cup chopped nuts (almonds, cashews, pistachios)</li>
+      <li>1/4 cup raisins</li>
+      <li>1/2 teaspoon cardamom powder</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: In a pan, heat ghee and add grated carrots. Saute the carrots until they are soft and release their aroma. Add milk and cook the carrots until the milk is absorbed...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

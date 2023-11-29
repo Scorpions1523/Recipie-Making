@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/Samosa.jpeg');
+      background-size:cover;
+      background-repeat:no-repeat;
+    }
+
+    .recipe-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #050505;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #e0d2d2;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <title>Samosa Recipe</title>
+</head>
+<body>
+
+  <div class="recipe-container">
+    <center><h1>Samosa</h1></center>
+    <p id="ingredients">Ingredients:</p>
+    <ul>
+      <li>For the Dough:</li>
+      <li>2 cups all-purpose flour</li>
+      <li>1/4 cup ghee (clarified butter)</li>
+      <li>Water (as needed)</li>
+      <li>For the Filling:</li>
+      <li>3 to 4 medium-sized potatoes, boiled and mashed</li>
+      <li>1 cup peas (fresh or frozen)</li>
+      <li>1 tablespoon oil</li>
+      <li>1 teaspoon cumin seeds</li>
+      <li>1 teaspoon ginger-garlic paste</li>
+      <li>1/2 cup chopped onions</li>
+      <li>1/2 teaspoon turmeric powder</li>
+      <li>1 teaspoon garam masala</li>
+      <li>1 teaspoon coriander powder</li>
+      <li>1 teaspoon red chili powder</li>
+      <li>Salt to taste</li>
+      <li>Oil for frying</li>
+    </ul>
+    <button onclick="toggleInstructions()">Show Instructions</button>
+    <p id="instructions" style="display: none;">Instructions: For the dough, mix all-purpose flour and ghee. Gradually add water to form a smooth, firm dough. Cover and let it rest. For the filling, heat oil in a pan, add cumin seeds, ginger-garlic paste, chopped onions, and sauté until onions are golden brown...</p>
+  </div>
+
+  <script>
+    function toggleInstructions() {
+      var instructions = document.getElementById("instructions");
+      if (instructions.style.display === "none") {
+        instructions.style.display = "block";
+      } else {
+        instructions.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
